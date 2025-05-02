@@ -1,0 +1,41 @@
+# https://www.robotstxt.org/robotstxt.html
+# Finvo Website Robots.txt
+# Version 1.0
+
+User-agent: *
+Allow: /
+
+# Allow all bots to access the sitemap
+Sitemap: https://finvo.com/sitemap.xml
+
+# Disallow admin and authentication pages
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /reset-password
+Disallow: /dashboard/
+
+# Disallow API endpoints
+Disallow: /api/
+
+# Disallow specific files
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Crawl delay for all bots
+Crawl-delay: 10
+
+# Google-specific directives
+User-agent: Googlebot
+Allow: /blog/
+Allow: /about
+Allow: /contact
+Disallow: /dashboard/
+
+# Bing-specific directives
+User-agent: Bingbot
+Allow: /blog/
+Allow: /about
+Allow: /contact
+Disallow: /dashboard/
