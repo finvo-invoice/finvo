@@ -1,0 +1,415 @@
+/* Create Invoice Page Styles */
+.invoice-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+}
+
+.header-section {
+  margin-bottom: 24px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  margin: 0 0 8px 0;
+}
+
+.page-subtitle {
+  color: #666;
+  margin: 0;
+  font-size: 16px;
+}
+
+.page-title:before {
+  display: none;
+}
+
+/* Stats Cards */
+.stats-container {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card > div {
+  margin-left: 16px;
+}
+
+/* Form styling */
+.invoice-form-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.invoice-form-section {
+  padding: 28px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.invoice-form-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  color: #4CAF50;
+  padding-left: 0;
+  border: none;
+  border-left: none !important;
+  position: relative;
+}
+
+.section-title::before {
+  display: none;
+}
+
+.section-title::after {
+  display: none;
+}
+
+.section-title-icon {
+  margin-right: 8px;
+  color: #4CAF50;
+}
+
+/* New class to completely remove vertical bars */
+.no-vertical-bar {
+  border: none !important;
+  border-left: none !important;
+  padding-left: 0 !important;
+  position: relative !important;
+}
+
+.no-vertical-bar::before,
+.no-vertical-bar::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* Table Styling */
+.invoice-items-table {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.invoice-items-table .MuiTableHead-root {
+  background-color: #f9f9f9;
+}
+
+.invoice-items-table .MuiTableCell-head {
+  font-weight: 600;
+  color: #555;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.invoice-items-table .MuiTableRow-root {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.invoice-items-table .MuiTableCell-root {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.add-item-btn {
+  text-transform: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  background-color: #f8f9fa;
+  color: #4CAF50;
+  border: 1px solid #4CAF50;
+}
+
+.add-item-btn:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Selector styles */
+.company-client-selector {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.selector-field {
+  flex: 1;
+  margin-right: 10px;
+  background-color: #fff;
+}
+
+.new-entity-btn {
+  height: 56px;
+  min-width: 70px;
+  border-radius: 4px;
+  text-transform: none;
+  color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.new-entity-btn:hover {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Total Calculations */
+.totals-section {
+  margin-top: 32px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9fa;
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.totals-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tax-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tax-input {
+  width: 80px;
+  margin: 0 8px;
+}
+
+.grand-total-row {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+  color: #4CAF50;
+}
+
+.total-label, .total-value {
+  font-size: 0.875rem !important;
+}
+
+/* Action Buttons */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 28px;
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+}
+
+.reset-btn {
+  color: #757575;
+  border-color: #e0e0e0;
+  text-transform: none;
+  font-weight: 500;
+  padding: 10px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn {
+  background-color: #002619;
+  color: white;
+  text-transform: none;
+  font-weight: 500;
+  padding: 10px 24px;
+  box-shadow: 0 2px 8px rgba(0, 38, 25, 0.3);
+  transition: all 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #0d3629;
+  box-shadow: 0 4px 12px rgba(0, 38, 25, 0.4);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  color: #002619;
+  border-color: #002619;
+  text-transform: none;
+  font-weight: 500;
+  padding: 10px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(0, 38, 25, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 38, 25, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Loading and Error States */
+.loading-container, .error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+/* Dialog styling */
+.dialog-title {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 24px;
+}
+
+.dialog-actions {
+  padding: 20px 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.MuiDialog-paper {
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.MuiDialogContent-root {
+  padding: 24px 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .invoice-container {
+    padding: 20px 12px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .invoice-form-section {
+    padding: 20px 16px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+  
+  .totals-section {
+    padding: 20px 16px;
+  }
+  
+  .totals-row {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #002619;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  min-width: 84px;
+  height: 36px;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-button svg {
+  font-size: 16px;
+  color: #4CAF50;
+}
+
+.add-button:hover {
+  background-color: #0d3629;
+}
+
+/* Details Container Styling */
+.details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.details-container .MuiPaper-root {
+  background-color: #f9f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #e9ecef;
+}
+
+.details-container .MuiTypography-subtitle1 {
+  font-weight: 600;
+  color: #4CAF50;
+  margin-bottom: 8px;
+}
+
+.details-container .MuiTypography-body2 {
+  margin-bottom: 4px;
+}
+
+.details-container .MuiTypography-body2 strong {
+  font-weight: 600;
+  color: #555;
+} 

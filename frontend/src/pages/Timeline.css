@@ -1,0 +1,168 @@
+.timeline-page {
+  padding-top: 70px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.timeline-header {
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-header h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-header p {
+  color: #666;
+}
+
+.timeline-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.timeline-loading,
+.timeline-error {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.timeline-error {
+  color: #c62828;
+}
+
+.project-timeline {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.project-header h2 {
+  color: #333;
+  margin: 0;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.status.in-progress {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.status.completed {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.status.delayed {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.milestone {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.milestone:last-child {
+  padding-bottom: 0;
+}
+
+.milestone-dot {
+  position: absolute;
+  left: -2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: 2px solid white;
+}
+
+.milestone-dot.completed {
+  background-color: #4caf50;
+}
+
+.milestone-line {
+  position: absolute;
+  left: -1.5rem;
+  top: 1rem;
+  bottom: 0;
+  width: 2px;
+  background-color: #ddd;
+}
+
+.milestone-line.completed {
+  background-color: #4caf50;
+}
+
+.milestone-content {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+
+.milestone-content h3 {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.milestone-content p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-header {
+    padding: 1.5rem;
+  }
+  
+  .project-timeline {
+    padding: 1.5rem;
+  }
+  
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  
+  .milestone-dot {
+    left: -1.5rem;
+  }
+  
+  .milestone-line {
+    left: -1rem;
+  }
+} 
