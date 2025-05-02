@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2144644.css",
+    "main.js": "/static/js/main.dad3c0e7.js",
+    "static/js/388.f638b52e.chunk.js": "/static/js/388.f638b52e.chunk.js",
+    "static/js/453.d855a71b.chunk.js": "/static/js/453.d855a71b.chunk.js",
+    "static/media/finvo-logo.svg": "/static/media/finvo-logo.f6f249b55e33fa408cd6ead23cfed695.svg",
+    "index.html": "/index.html",
+    "main.d2144644.css.map": "/static/css/main.d2144644.css.map",
+    "main.dad3c0e7.js.map": "/static/js/main.dad3c0e7.js.map",
+    "388.f638b52e.chunk.js.map": "/static/js/388.f638b52e.chunk.js.map",
+    "453.d855a71b.chunk.js.map": "/static/js/453.d855a71b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2144644.css",
+    "static/js/main.dad3c0e7.js"
+  ]
+}
